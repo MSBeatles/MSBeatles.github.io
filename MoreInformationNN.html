@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>EuCanShare | NN: More Information</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">EuCanShare</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="radiomics.html">Step-By-Step</a>
+									<ul class="dropdown">
+										<li><a href="radiomics.html">Radiomics</a></li>
+										<li><a href="dimensionalityReduction.html">Dimensionality Reduction</a></li>
+										<li><a href="trainingAlgorithm.html">Training Algorithm</a></li>
+										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
+									</ul>
+								</li>
+								<li><a href="whatIsAI.html">More information</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+			<div class="display-t display-t2 text-center">
+				<div class="display-tc display-tc2">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+								<h2>NN: More Information</h2>
+								<p class="breadcrumbs"><span><a href="index.html">Back to home</a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<article>
+							<h2><a href="#">Neural Network</a></h2>
+							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
+							<p>The Neural Network algorithm is a little different from the other ones we've worked on. It is a computer program that tries to copy how a human brain works. It's
+	              composed of 3 layers: the input layer, used to introduce data, the output layer, where our result comes from and the hidden layer. This last one is where all the computing
+	              is done, and we'll extensively explain it later, since it can contain several layers itself. The more layers our hidden layer has, the better our neural network will be.</p>
+	            <p>Every layer has nodes, which are, in our comparison of a neural network with a brain, neurons. Inside each of them there's a
+	              piece of information. And just as neurons need synapse to communicate this information to each other, our nodes will have channels, acting as a bridge that will be used to convey information.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src = "img/NN_1.png" height = 100% width = 100%>
+	              </div>
+	              <div class = "col-md-2">
+	              </div>
+	            </div>
+	            <p>However, not all the pieces of information stored in the nodes are equally important to our problem. Therefore, we will have to assign each node a value based on how important it is.
+	              These values are known as weights, and the more weight a node has, the more the result will be influenced by its information.</p>
+	            <p>Every node from our input layer is connected to some nodes of our first hidden layer, and we transmit the information to them. However, we must be aware that we are working with
+	              weights, so we will have to calculate the weighted value of the node, as seen in the following image.</p>
+	              <div class = "row no-gutter">
+	                <div class = "col-md-2">
+	                </div>
+	                <div class = "col-md-8">
+	                  <img src = "img/NN_2.png" height = 100% width = 100%>
+	                </div>
+	                <div class = "col-md-2">
+	                </div>
+	              </div>
+	            <p> When the nodes in the hidden layer receive their calculated "score", we have to check if this score is high enough to keep the information going into deeper layers. This is why we
+	              need an "activation function", which is only an equation that tells us if the information in the node must continue deeper into the neural network. Some nodes will activate, and some
+	              will not. The ones that don't activate, will automatically be weighted with a value of 0, and so will not affect our further calculations in the algorithm. The ones that activate, however,
+	              will repeat the process that before with the input layer nodes: They are linked to the next layer of our network, each with a weight, and we will again calculate the value of the receiving nodes,
+	              based off the values we have in our current layer. </p>
+	            <p>To summarize, we could say that the working of a neural network comes from having a layer full of nodes with values, that we use to calculate the values of the nodes of the next layer.
+	              This process repeats itself for deeper layers until we reach the output layer, and every node in the output layer receives a value between 0 and 1. This value is a probability. </p>
+	            <p> Like we did with the random forest, we need to check if our neural network is working correctly, so we have to check with some examples if our predictions are right. If they're not,
+	              that means that the weights of some nodes are off, and we must try a new value on them. We keep looking for new values until we reach a high rate of accuracy in our network. The process
+	              of training a neural network is long, and if we add more layers and nodes to it, the longer it will take. This means that a bigger neural network will result in higher accuracy and better predictions,
+	              but it will also need more time to be fully trained. We must find a balance where the highest accuracy possible is achieved without having so many layers that we lack processing power to train it.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-5">
+	                <img src="img/Height.png" width=100% height=100%>
+	              </div>
+	              <div class = "col-md-1">
+	              </div>
+	              <div class = "col-md-5">
+	                <img src="img/Weight.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <p> It goes without saying that the algorithm will not only use weight and height, this is just an oversimplified example to have the way the algorithm works explained. </p>
+							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>About EuCanShare</h4>
+						<p>EuCanShare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>Information</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> Home</a></li>
+								<li><a href="#"><i class="icon-check"></i> Step-by-Step</a></li>
+								<li><a href="#"><i class="icon-check"></i> More Information</a></li>
+								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col-md-3 colorlib-widget">
+						<h4>Contact Info</h4>
+						<ul class="colorlib-footer-links">
+							<li>420 Hospital St, Hospital Land<br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
+							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br>
+								Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>EuCanShare | Training Algorithm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+							<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">EuCanShare</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="radiomics.html">Step-By-Step</a>
+									<ul class="dropdown">
+										<li><a href="radiomics.html">Radiomics</a></li>
+										<li><a href="dimensionalityReduction.html">Dimensionality Reduction</a></li>
+										<li><a href="trainingAlgorithm.html">Training Algorithm</a></li>
+										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
+									</ul>
+								</li>
+								<li><a href="whatIsAI.html">More information</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+			<div class="display-t display-t2 text-center">
+				<div class="display-tc display-tc2">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+								<h2>LDA: More Information</h2>
+								<p class="breadcrumbs"><span><a href="index.html">Back to home</a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<article>
+							<h2>Linear Discriminant Analysis</h2>
+							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
+							<p>Linear Discriminant Analysis is an algorithm the goal of which is the same as Principal Component Analysis: reducing the dimension of your dataset. However,
+	            this algorithm doesn't try to find out the important parameters, but to find a simple form to represent your many patients clearly separated in categories
+	            based on the information it's given, which would usually take a much more complex graphic representation.</p>
+	            <h3> How does it work? </h3>
+	            <p> This algorithm seeks to find an axis along which the types of patients are clearly separated and classified, and it does so by maximizing the distance between
+	               the central points of each type of patient (their means), while minimizing how scattered the patients are along this new axis.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src = "img/LDA0.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <p> The process begins by taking the info we have on patients and classifying it in groups, that we will call classes. Then, we distribute them on a space of as many dimensions as variables we have.
+	            For the sake of understanding, we'll work with 2 dimensions: height and weight, so we distribute our patients in a plane.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src="img/LDA0_1.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-12">
+	                <p></p>
+	                <p> Now, the algorithm will find the central point of each of our classes (its mean), and measure the distance between them. It is as important to maximize the distance
+	                  between means as it is to minimize the scattering, because only doing both we guarantee that there's the optimal separation of groups.</p>
+	              </div>
+	            </div>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-5">
+	                <img src="img/LDA0_2.png" width=100% height=100%>
+	              </div>
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-5">
+	                <img src="img/LDA0_3.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-5">
+	                <p class="underimage"> In this case, we're only trying to maximize the distance between means, but as you can see, there's a little bit of a mix-up between the two classes. </p>
+	              </div>
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-5">
+	                <p class="underimage"> However, here we're trying to minimize the scattering as well. Even though the distance between means is not as big as before, there's a much more clear separation between class A and class B. </p>
+	              </div>
+	            </div>
+	            <h4> An example </h4>
+	            <p>For better understanding, let's imagine we're doing a study where we test a drug related to breathing issues during the night on
+	               15 patients. After we've done some testing, we realise that there's essentially 3 groups of patients: Patients who react positively to the drug, patients who react negatively,
+	            and patients who just don't feel any different. We will have, therefore, 3 classes. We will suppose that in this study we take into account the weight and the height of our participants.
+	            When we scatter them in a graph, this is the result. </p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src = "img/LDA.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <p class = "underimage">Red dots represent patients with negative reactions, green dots represent the ones with positive reactions and blue dots are patients who felt the same.</p>
+	              </div>
+	            </div>
+	            <p>In this example, we will not be able to do the same as before and collapse everything into 1 dimension, since we have 3 classes and this will change a few things. First of all, we will need 2 axes to separate all 3 categories of patients. If we tried to do it all in 1 axis,
+	              the classes would intertwine and end up being poorly classified. Also, we will need to find the center point of all the data, and we will calculate the distance between the mean of every class and said point, instead of calculating the distance between two means. It will result
+	              in something along the lines of the following image.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src = "img/LDA3.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <p>Now, the algorithm will try to maximize the distance between the means, just as before, and minimize the scatter of each group. This way, we will have the 3 classes clearly separated and classified. Even though this example is applied to only 3 classes and 2 variables,
+	              and therefore the dimensionality reduction is not there (we go from a 2D graph to another 2D graph),
+	              the algorithm would work through the same steps if we had a thousand different variables, as is usual in this kind of test, and would result in a considerable reduction of the dimensionality of our data.</p>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <img src = "img/LDA2.png" width=100% height=100%>
+	              </div>
+	            </div>
+	            <div class = "row no-gutter">
+	              <div class = "col-md-2">
+	              </div>
+	              <div class = "col-md-8">
+	                <p class = "underimage">As we see, the classification isn't perfect, but it still gives us quite an accurate idea of which patients will feel better by taking the drug based on their height and weight.</p>
+							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>About EuCanShare</h4>
+						<p>EuCanShare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>Information</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> Home</a></li>
+								<li><a href="#"><i class="icon-check"></i> Step-by-Step</a></li>
+								<li><a href="#"><i class="icon-check"></i> More Information</a></li>
+								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col-md-3 colorlib-widget">
+						<h4>Contact Info</h4>
+						<ul class="colorlib-footer-links">
+							<li>420 Hospital St, Hospital Land<br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
+							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br>
+								Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
