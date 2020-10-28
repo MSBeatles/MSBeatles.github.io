@@ -114,10 +114,14 @@
 									<div class="col-md-12 col-md-pull-12 no-gutters">
 										<div class="display-t desc">
 											<div class="display-tc">
-												<h2>Principal Component Analysis</h2>
-												<p>An algorithm that only takes into account the most important variables, ignoring the rest.</p>
+												<h2 class="mb-0">
+							            <input type="radio" id = "PCA" name = "Pre-Algorithm" value="PCA" checked = "checked">
+							            <label for="PCA"></label>
+							              Principal Component Analysis
+													</h2>
+													<p>An algorithm that only takes into account the most important variables, ignoring the rest.</p>
 												<span class="icon">
-													<a href = "MoreInformationPCA.html"><i class="icon-info"></i></a>
+													<a href = "MoreInformationPCA.html">More information</a>
 												</span>
 											</div>
 										</div>
@@ -141,10 +145,14 @@
 									<div class="col-md-12 no-gutters">
 										<div class="display-t desc">
 											<div class="display-tc">
-												<h2>Linear Discriminant Analysis</h2>
-												<p>An algorithm that finds a way to fit several variables into a new one within a different dimension.</p>
+												<h2 class="mb-0">
+							            <input type="radio" id = "LDA" name = "Pre-Algorithm" value="LDA">
+							            <label for="LDA"></label>
+							              Linear Discriminant Analysis
+													</h2>
+													<p>An algorithm that finds a way to fit several variables into a new one within a different dimension.</p>
 												<span class="icon">
-													<a href = "MoreInformationLDA.html"><i class="icon-info"></i></a>
+													<a href = "MoreInformationLDA.html">More information</a>
 												</span>
 											</div>
 										</div>
@@ -168,10 +176,14 @@
 									<div class="col-md-12 col-md-pull-12 no-gutters">
 										<div class="display-t desc">
 											<div class="display-tc">
-												<h2>Correlation</h2>
-												<p>An algorithm that finds variables that act similarly and ignores all of them but one.</p>
+												<h2 class="mb-0">
+							            <input type="radio" id = "Corr" name = "Pre-Algorithm" value="Corr">
+							            <label for="Corr"></label>
+							              Correlation
+													</h2>
+													<p>An algorithm that finds variables that act similarly and ignores all of them but one.</p>
 												<span class="icon">
-													<a href = "MoreInformationCorr.html"><i class="icon-info"></i></a>
+													<a href = "MoreInformationCorr.html">More information</a>
 												</span>
 											</div>
 										</div>
@@ -277,6 +289,24 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+
+
+	<script>
+	var alg1;
+	function chooseAlgorithm(){
+		//localStorage.clear();
+		if (document.getElementById('PCA').checked){
+			localStorage.setItem("alg1", "PCA");
+		}else if (document.getElementById('LDA').checked){
+			localStorage.setItem("alg1", "LDA");
+		}else if (document.getElementById('Correlation').checked){
+			localStorage.setItem("alg1", "CORR");
+		}else{
+
+		}
+	}
+	</script>
 
 	</body>
 </html>
