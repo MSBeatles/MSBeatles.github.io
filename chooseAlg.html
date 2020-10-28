@@ -202,8 +202,8 @@
 							<li><a href="choosePre.html">&laquo;</a></li>
 							<li><a href="choosePre.html">1</a></li>
 							<li class="active"><a href="#">2</a></li>
-							<li><a href="chooseTrainOrDownload.html">3</a></li>
-							<li><a href="chooseTrainOrDownload.html">&raquo;</a></li>
+							<li><a href="chooseTrainOrDownload.html" onClick = "chooseAlgorithm()">3</a></li>
+							<li><a href="chooseTrainOrDownload.html" onClick = "chooseAlgorithm()">&raquo;</a></li>
 						</ul>
 					</div>
 				</div>
@@ -291,6 +291,22 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+	function chooseAlgorithm(){
+		if (document.getElementById('SVM').checked){
+			localStorage.setItem("alg2", "SVM");
+		}else if (document.getElementById('RF').checked){
+			localStorage.setItem("alg2", "RF");
+		}else if (document.getElementById('NN').checked){
+			localStorage.setItem("alg2", "NN");
+		}else if (document.getElementById('GLM').checked){
+			localStorage.setItem("alg2", "GLM");
+		}else {
+
+		}
+	}
+	</script>
 
 	</body>
 </html>
