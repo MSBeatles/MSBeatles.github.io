@@ -72,7 +72,8 @@
 										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
 									</ul>
 								</li>
-								<li><a href="whatIsAI.html">More information</a></li>
+								<li><a href="#">More information</a></li>
+								<li><a href="whatIsAI.html">What is AI?</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
@@ -148,30 +149,24 @@
 	              variables when deciding how to branch, they will select a random couple of variables for each branching point. This means, that if we have a subset of 10 patients with height, weight, age and gender,
 	              the decision tree we create from this subset will only look at two random variables for the first branching point (let's say height and age). If height gives better results separating our patients,
 	              for the second branching it will repeat the process with 2 out of the 3 remaining features of our patient. Again, selected randomly.</p>
-	            <p>Notice that we're working with maybe one thousand different trees, each one based off random patients, and that for a determinate
+	            <p>Notice that we're working with maybe one thousand different trees, each one based on random patients, and that for a determinate
 	              subset the branching points of a tree may not be the same ones as for another subset, since we're picking completely random variables for each branch. This means that, if we look at the example from before, some trees may divide first by age, and then by
-	              gender, while other trees may do first height, then gender, etc. Keep in mind, the real algorithm will work with many more patients and variables, so the trees will not be as simple as our example.</p>
+	              gender, while other trees may do first height, then gender, etc.</p>
 
-	            <p> When we have all the trees created, we will want to check if our random forest is working properly. To do so, we will use the fact that, since the subsets are randomly created and some of our patients are repeated
+	            <p> When we have all the trees created, we will want to check if our random forest is working properly. To do it, we will use the fact that, since the subsets are randomly created and some of our patients are repeated
 	              in these subsets, some other patients have not been used to create the decision trees, and therefore we can use them as test subjects. We just need to make them go through the random forest and see in which class they end up classified.
 	              If we do that for every single one of our non-used samples, we can find out the precision of our random forest by looking at how many are properly classified.</p>
 	            <p>After all that, when we introduce a new patient, this patient will go through every single one of our trees, making its way through the appropriate branches, and ending up classified
 	              many times in many trees. Statistically, though, the patient is bound to end up classified in the wrong class for some of the trees, so how do we decide in which class they belong?
 	              The answer to that is pretty simple: vote. Each tree submits a vote saying "The result I got is that this patient belongs in class A", or whichever class did they assign the patient to, and the
 	              class with the most votes is where we'll put our new patient.</p>
-	            <div class = "row no-gutter">
-	              <div class = "col-md-5">
-	                <img src="img/Height.png" width=100% height=100%>
-	              </div>
-	              <div class = "col-md-1">
-	              </div>
-	              <div class = "col-md-5">
-	                <img src="img/Weight.png" width=100% height=100%>
-	              </div>
-	            </div>
-	            <p> It goes without saying that the algorithm will not only use weight and height, this is just an oversimplified example to have the way the algorithm works explained. </p>
 							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
 						</article>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box text-center">
+						<p><a href="chooseAlg.html" class="btn btn-primary btn-lg btn-custom">Go Back</a></p>
 					</div>
 				</div>
 			</div>
@@ -197,8 +192,9 @@
 						<p>
 							<ul class="colorlib-footer-links">
 								<li><a href="#"><i class="icon-check"></i> Home</a></li>
-								<li><a href="#"><i class="icon-check"></i> Step-by-Step</a></li>
-								<li><a href="#"><i class="icon-check"></i> More Information</a></li>
+								<li><a href="radiomics.html"><i class="icon-check"></i> Step-by-Step</a></li>
+								<li><a href="#"><i class="icon-check"></i>More information</a></li>
+								<li><a href="whatIsAI.html"><i class="icon-check"></i> What is AI?</a></li>
 								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
 								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
 							</ul>
@@ -208,7 +204,7 @@
 					<div class="col-md-3 colorlib-widget">
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
-							<li>420 Hospital St, Hospital Land<br> Suite 721 New York NY 10016</li>
+							<li>420 Hospital St, Hospital Land<br> Barcelona, Spain</li>
 							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
 							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
