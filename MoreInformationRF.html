@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EuCanShare | RF: More Information</title>
+	<title>EuCanSHare | RF: More Information</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -58,7 +58,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">EuCanShare</a></div>
+							<div id="colorlib-logo"><a href="index.html">EuCanSHare</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -72,7 +72,6 @@
 										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
 									</ul>
 								</li>
-								<li><a href="#">More information</a></li>
 								<li><a href="whatIsAI.html">What is AI?</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -90,7 +89,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>RF: More Information</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Back to home</a></span></p>
+								<p class="breadcrumbs"><span><a href="chooseAlg.html">Back</a></span> <span>RF</span></p>
 							</div>
 						</div>
 					</div>
@@ -105,7 +104,7 @@
 						<article>
 							<h2><a href="#">Random Forest</a></h2>
 							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
-							<p>To understand the concept of random forest we first need to understand what a decision tree is. The functioning of a decision tree is very simple with an example, so here it goes. Let's suppose we're trying to decide whether we should prescribe a drug to one of our patients, and we have done a previous study based on gender and age that has given the following results:</p>
+							<p>To understand the concept of random forest we first need to understand what a <b>decision tree</b> is. The functioning of a decision tree is very simple with an example, so here it goes. Let's suppose we're trying to decide whether we should prescribe a drug to one of our patients, and we have done a previous study based on gender and age that has given the following results:</p>
 	            <div class = "row no-gutter">
 	              <div class = "col-md-4">
 	              </div>
@@ -121,7 +120,7 @@
 	              </div>
 	            </div>
 	            <p> As we said before, there's two variables that we can separate our patients by: gender and age. If we look closely, we will see that all the male patients had negative reactions only, while all the female patients felt some kind of improvement, even if marred by the side effects. Then, if we look at our female patients, we will see that these negative side effects only appeared on patients older than 50 years old. So, whenever a new patient comes in and we have to prescribe them this drug, we will first look at their gender: if it's a male, we will look for another solution. Then, if it's a female, we will look at her age and (depending on the seriousness of those side effects and individualizing each case) we will only give her this drug if she's younger than 50. </p>
-	            <p> This is how a decision tree works: it looks for the feature that bests splits the data, and uses it to create the first "branch", which means decision (hence the decision tree name). Then, it looks for the next best feature inside of these groups, and creates a second branching of the data, until all the data is classified in classes.</p>
+	            <p> This is how a decision tree works: it looks for the <b>feature that bests splits the data</b>, and uses it to create the first <b>"branch"</b>, which means decision (hence the decision tree name). Then, it looks for <b>the next best feature</b> inside of these groups, and creates a second branching of the data, until all the data is classified in classes.</p>
 	            <div class = "row no-gutter">
 	              <div class = "col-md-3">
 	                <img src="img/DecisionTree2.png" height=100% width=100%>
@@ -129,10 +128,10 @@
 	              <div class = "col-md-1">
 	              </div>
 	              <div class = "col-md-4">
-	                <p class = "smaller"> To the left, there's a properly created decision tree. We see that, by branching in the proper places, we get less branches in our tree than if we don't find the best feature
-	                  at each level. To the right we see what happens if we don't branch appropriately. We end up with more decisions than necessary by looking at the wrong features first. A decision tree's job
-	                  is to find the best way to branch our patients so as to optimise and improve decision-making whenever a new patient comes in. If we do it correctly, we will be able to identify what class the patient
-	                  belongs to in the least amount of decisions. This can be applied to finding out what kind of illness they have, what drug would suit them better or what procedure to take in treating them.</p>
+	                <p class = "smaller"> To the left, there's a properly created decision tree. We see that, by branching in the proper places, we get <b>less branches</b> in our tree than if we don't find the best feature
+	                  at each level. To the right we see what happens if we don't branch properly. We end up with more decisions than necessary by looking at the wrong features first. A decision tree's job
+	                  is to find the best way to branch our patients so as to optimise and <b>improve decision-making</b> whenever a new patient comes in. If we do it correctly, we will be able to identify what class the patient
+	                  belongs to by taking the <b>least amount of decisions</b>. This can be applied to finding out what kind of illness they have, what drug would suit them better or what procedure to take in treating them.</p>
 	              </div>
 	              <div class = "col-md-1">
 	              </div>
@@ -142,24 +141,24 @@
 	            </div>
 	            <p> Now that we know how decision trees work and what they do, it should be fairly easy to understand the random forest algorithm. </p>
 	            <h3> How does it work? </h3>
-	            <p> The principle on which the Random Forest algorithm is based is one that states that some problems are easier to solve when tackled in pieces, giving more accurate and overall
-	              better results if we split our data in parts and solve the problem many times, putting our results together afterwards.</p>
-	            <p> First of all, the algorithm will distribute our patients in several groups, that we will call subsets. Each subset will contain a number of patients randomly assigned to it, and some may even be repeated.
-	              Then, we will create a decision tree from each subset. These trees, however, will be a little bit different than the ones we explained before. Instead of looking at all our possible
-	              variables when deciding how to branch, they will select a random couple of variables for each branching point. This means, that if we have a subset of 10 patients with height, weight, age and gender,
-	              the decision tree we create from this subset will only look at two random variables for the first branching point (let's say height and age). If height gives better results separating our patients,
-	              for the second branching it will repeat the process with 2 out of the 3 remaining features of our patient. Again, selected randomly.</p>
+	            <p> The principle on which the Random Forest algorithm is based is one that states that some problems are easier to solve when <b>tackled in pieces</b>, giving more accurate and overall
+	              better results if we <b>split our data</b> in parts and solve the problem many times, <b>putting our separate results together afterwards</b>.</p>
+	            <p> First of all, the algorithm will distribute our patients in several groups, that we will call subsets. Each subset will contain a number of patients <b>randomly assigned</b> to it, and some may even be repeated.
+	              Then, we will create a <b>decision tree from each subset</b>. These trees, however, will be a little bit different than the ones we explained before. Instead of looking at all our possible
+	              variables when deciding how to branch, they will select a <b>random couple of variables for each branching point</b>. This means, that if we have a subset of 10 patients with height, weight, age and gender,
+	              the decision tree we create from this subset will only look at two random variables for the first branching point (let's say height and age). If height gives better results separating our patients, then we will take height as a branching variable and age will get discarded for now.
+	              For the second branching it will <b>repeat the process</b> with 2 out of the 3 remaining features of our patient. Again, selected randomly.</p>
 	            <p>Notice that we're working with maybe one thousand different trees, each one based on random patients, and that for a determinate
-	              subset the branching points of a tree may not be the same ones as for another subset, since we're picking completely random variables for each branch. This means that, if we look at the example from before, some trees may divide first by age, and then by
+	              subset the branching points of a tree <b>may not be</b> the same ones as for another subset, since we're picking completely random variables for each branch. This means that, if we look at the example from before, some trees may divide first by age, and then by
 	              gender, while other trees may do first height, then gender, etc.</p>
 
 	            <p> When we have all the trees created, we will want to check if our random forest is working properly. To do it, we will use the fact that, since the subsets are randomly created and some of our patients are repeated
-	              in these subsets, some other patients have not been used to create the decision trees, and therefore we can use them as test subjects. We just need to make them go through the random forest and see in which class they end up classified.
+	              in these subsets, some other patients <b>have not been used</b> to create the decision trees, and therefore we can use them as <b>test subjects</b>. We just need to make them go through the random forest and see which class they end up classified in.
 	              If we do that for every single one of our non-used samples, we can find out the precision of our random forest by looking at how many are properly classified.</p>
 	            <p>After all that, when we introduce a new patient, this patient will go through every single one of our trees, making its way through the appropriate branches, and ending up classified
 	              many times in many trees. Statistically, though, the patient is bound to end up classified in the wrong class for some of the trees, so how do we decide in which class they belong?
-	              The answer to that is pretty simple: vote. Each tree submits a vote saying "The result I got is that this patient belongs in class A", or whichever class did they assign the patient to, and the
-	              class with the most votes is where we'll put our new patient.</p>
+								The answer to that is pretty simple: <b>vote</b>. Each tree submits a vote saying "The result I got is that this patient belongs in class A", or whichever class did they assign the patient to, and <b>the
+	              class with the most votes is where we'll put our new patient</b>.</p>
 							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
 						</article>
 					</div>
@@ -176,8 +175,8 @@
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
-						<h4>About EuCanShare</h4>
-						<p>EuCanShare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
+						<h4>About EuCanSHare</h4>
+						<p>EuCanSHare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -193,10 +192,8 @@
 							<ul class="colorlib-footer-links">
 								<li><a href="#"><i class="icon-check"></i> Home</a></li>
 								<li><a href="radiomics.html"><i class="icon-check"></i> Step-by-Step</a></li>
-								<li><a href="#"><i class="icon-check"></i>More information</a></li>
 								<li><a href="whatIsAI.html"><i class="icon-check"></i> What is AI?</a></li>
 								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
 							</ul>
 						</p>
 					</div>
@@ -207,7 +204,7 @@
 							<li>420 Hospital St, Hospital Land<br> Barcelona, Spain</li>
 							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
+							<li><a href="#"><i class="icon-location4"></i> EuCanSHare.com</a></li>
 						</ul>
 					</div>
 				</div>

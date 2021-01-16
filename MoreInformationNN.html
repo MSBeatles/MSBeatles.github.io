@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EuCanShare | NN: More Information</title>
+	<title>EuCanSHare | NN: More Information</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -58,7 +58,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">EuCanShare</a></div>
+							<div id="colorlib-logo"><a href="index.html">EuCanSHare</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -72,7 +72,6 @@
 										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
 									</ul>
 								</li>
-								<li><a href="#">More information</a></li>
 								<li><a href="whatIsAI.html">What is AI?</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -90,7 +89,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>NN: More Information</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Back to home</a></span></p>
+								<p class="breadcrumbs"><span><a href="chooseAlg.html">Back</a></span> <span>NN</span></p>
 							</div>
 						</div>
 					</div>
@@ -105,11 +104,11 @@
 						<article>
 							<h2><a href="#">Neural Network</a></h2>
 							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
-							<p>The Neural Network algorithm is a little different from the other ones we've worked on. It is a computer program that tries to copy how a human brain works. It's
-	              composed of 3 layers: the input layer, used to introduce data, the output layer, where our result comes from and the hidden layer. This last one is where all the computing
-	              is done, and we'll extensively explain it later, since it can contain several layers itself. The more layers our hidden layer has, the better our neural network will be.</p>
-	            <p>Every layer has nodes, which are, in our comparison of a neural network with a brain, neurons. Inside each of them there's a
-	              piece of information. And just as neurons need synapse to communicate this information to each other, our nodes will have channels, acting as a bridge that will be used to convey information.</p>
+							<p>The <b>Neural Network</b> algorithm is a little different from the other ones we've worked on. It is a computer program that tries to <b>copy how a human brain works</b>. It's
+	              composed of 3 <b>layers</b>: the <b>input</b> layer, used to introduce data, the <b>output</b> layer, where our result comes from and the <b>hidden</b> layer. This last one is where all the computing
+	              is done, and we'll extensively explain it later, since it can contain several layers itself. As a general rule of thumb, the more layers our hidden layer has, the better our neural network will be.</p>
+	            <p>Every layer has <b>nodes</b>, which are, in our comparison of a neural network with a brain, <b>neurons</b>. Inside each of them there's a
+	              piece of information. And just as neurons need synapse to communicate this information to each other, our nodes will have <b>channels</b>, acting as a bridge that will be used to convey information.</p>
 	            <div class = "row no-gutter">
 	              <div class = "col-md-2">
 	              </div>
@@ -119,10 +118,10 @@
 	              <div class = "col-md-2">
 	              </div>
 	            </div>
-	            <p>However, not all the pieces of information stored in the nodes are equally important to our problem. Therefore, we will have to assign each node a value based on how important it is.
-	              These values are known as weights, and the more weight a node has, the more the result will be influenced by its information.</p>
+	            <p>However, not all the pieces of information stored in the nodes are equally important to our problem. Therefore, we will have to <b>assign each node a value</b> based on how important it is.
+	              These values are known as <b>weights</b>, and the more weight a node has, the more the result will be influenced by its information.</p>
 	            <p>Every node from our input layer is connected to some nodes of our first hidden layer, and we transmit the information to them. However, we must be aware that we are working with
-	              weights, so we will have to calculate the weighted value of the node, as seen in the following image.</p>
+	              weights, so we will have to calculate the <b>weighted value</b> of the node, as seen in the following image.</p>
 	              <div class = "row no-gutter">
 	                <div class = "col-md-2">
 	                </div>
@@ -132,17 +131,17 @@
 	                <div class = "col-md-2">
 	                </div>
 	              </div>
-	            <p> When the nodes in the hidden layer receive their calculated "score", we have to check if this score is high enough to keep the information going into deeper layers. This is why we
-	              need an "activation function", which is only an equation that tells us if the information in the node must continue deeper into the neural network. Some nodes will activate, and some
-	              will not. The ones that don't activate, will automatically be weighted with a value of 0, and so will not affect our further calculations in the algorithm. The ones that activate, however,
-	              will repeat the process that before with the input layer nodes: They are linked to the next layer of our network, each with a weight, and we will again calculate the value of the receiving nodes,
+	            <p> When the nodes in the hidden layer receive their calculated "score", <b>we have to check if this score is high enough</b> to keep the information going into deeper layers. This is why we
+	              need an <b>"activation function"</b>, which is only an equation that tells us if the information in the node must continue deeper into the neural network. Some nodes will activate, and some
+	              will not. The ones that don't activate will automatically be weighted with a value of 0, and so <b>will not affect</b> our further calculations in the algorithm. The ones that activate, however,
+	              <b>will repeat the same process that we did before</b> with the input layer nodes: They are linked to the next layer of our network, each with a weight, and we will again calculate the value of the receiving nodes,
 	              based on the values we have in our current layer. </p>
-	            <p>To summarize, we could say that the working of a neural network comes from having a layer full of nodes with values, that we use to calculate the values of the nodes of the next layer.
-	              This process is repeated for deeper layers until we reach the output layer, and every node in the output layer receives a value between 0 and 1. This value is a probability. </p>
+	            <p>To summarize, we could say that the working of a neural network comes from having a <b>layer full of nodes with values</b>, that we <b>use to calculate the values of the nodes of the next layer</b>.
+	              This process is repeated for deeper layers until we reach the output layer, and every node in the output layer receives a <b>value between 0 and 1</b>. This value is a probability. </p>
 	            <p> Like we did with the random forest, we need to check if our neural network is working correctly, so we have to check with some examples if our predictions are right. If they're not,
-	              that means that the weights of some nodes are off, and we must try a new value on them. We keep looking for new values until we reach a high rate of accuracy in our network. The process
-	              of training a neural network is long, and the more layers and nodes we add to it, the longer it will take. This means that a bigger neural network will result in higher accuracy and better predictions,
-	              but it will also need more time to be fully trained. We must find a balance where the highest accuracy possible is achieved without having so many layers that we lack processing power to train it.</p>
+	              that means that <b>the weights of some nodes are off</b>, and we must try a new value on them. We keep looking for new values until we reach a high rate of accuracy in our network. The process
+	              of training a neural network is long, and <b>the more layers and nodes we add to it, the longer it will take</b>. This means that a bigger neural network will result in higher accuracy and better predictions,
+	              but it will also need more time to be fully trained. We must find a <b>balance</b> where the highest accuracy possible is achieved without having so many layers that we lack processing power to train it.</p>
 							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
 						</article>
 					</div>
@@ -159,8 +158,8 @@
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
-						<h4>About EuCanShare</h4>
-						<p>EuCanShare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
+						<h4>About EuCanSHare</h4>
+						<p>EuCanSHare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -176,10 +175,8 @@
 							<ul class="colorlib-footer-links">
 								<li><a href="#"><i class="icon-check"></i> Home</a></li>
 								<li><a href="radiomics.html"><i class="icon-check"></i> Step-by-Step</a></li>
-								<li><a href="#"><i class="icon-check"></i>More information</a></li>
 								<li><a href="whatIsAI.html"><i class="icon-check"></i> What is AI?</a></li>
 								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
 							</ul>
 						</p>
 					</div>
@@ -190,7 +187,7 @@
 							<li>420 Hospital St, Hospital Land<br> Barcelona, Spain</li>
 							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
+							<li><a href="#"><i class="icon-location4"></i> EuCanSHare.com</a></li>
 						</ul>
 					</div>
 				</div>

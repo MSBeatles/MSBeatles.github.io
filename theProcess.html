@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EuCanShare | An Explanation</title>
+	<title>EuCanSHare | The Process</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -58,7 +58,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">EuCanShare</a></div>
+							<div id="colorlib-logo"><a href="index.html">EuCanSHare</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -72,7 +72,6 @@
 										<li><a href="trainOrDownload.html">Choosing a machine</a></li>
 									</ul>
 								</li>
-								<li><a href="#">More information</a></li>
 								<li><a href="whatIsAI.html">What is AI?</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -90,7 +89,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>The process</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Back to home</a></span></p>
+								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Process</span></p>
 							</div>
 						</div>
 					</div>
@@ -114,76 +113,80 @@
 						</article>
 					</div>
 				</div>
+			</div>
+		</div>
 
-			<div class="colorlib-blog">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<article>
-								<h2><a href="#">The Choices</a></h2>
-								<!-- <p class="admin"><span>May 12, 2018</span></p> -->
-								<p>The algorithms you take to set up your machine are based on your personal preferences, but for the sake of information we will explain
-								how each one works. It's always better to choose if you have a proper understanding of why you're making your choices.</p>
-								<p> The use of the first algorithm that you will have to choose is to reduce the amount of data that your machine will have to process, because even if the
-								machine would become more accurate by getting more data, it would take way too long to process it all. So what this algorithm will do
-								is take the most important variables and get rid of the rest.<br>
-								You can choose the "tactic" it uses to do so:·<br><b>Correlation</b>, that finds the variables that usually change together and groups them into one unique variable.<br>
-								 ·<b>Principal Component Analysis</b>, which chooses the data that affects the result the most.<br>
-								·<b>Linear Discriminant Analysis</b>, which finds a new dimension in which to fit different kinds of data as one.</p>
-								<p>The second algorithm that you choose will be the one that teaches the machine how to interpret the data that we give it. This way, when the machine is given
-								a new MRI that isn't solved, it will have learnt from the ones that were used to teach it, and it will know how to diagnose the patient based
-								on what it has seen in other MRIs.<br>
-								For this step, you can choose between 4 optons:<br>
-								 ·<b>Support Vector Machine</b>, which creates a threshold between groups of patients (ill/healthy, etc).<br>
-								 ·<b>Random Forest</b>, that randomly creates many decision trees which "vote" their outcome, picking the one with the most votes.<br>
-								 ·<b>Neural Network</b>, that immitates the structure of a human brain with several layers of "neurons".<br>
-								 ·<b>Generalized Linear Model</b>, that classifies patients based on a logistic regression.</p>
-
-								<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
-							</article>
-						</div>
-				</div>
-
-				<div class="colorlib-blog">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<article>
-									<h2><a href="#">The MRIs</a></h2>
-									<!-- <p class="admin"><span>May 12, 2018</span></p> -->
-									<p>You may not have enough MRIs to properly train a machine. This can happen sometimes. We recommend that you train your own machine
-									only if you have over 80 MRIs from patients willing to take part in the project. If you happen to have fewer than that, we have made available an
-									option for you to download machines that other doctors have trained, so you can choose one of theirs if you lack enough MRIs.</p>
-
-									<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
-								</article>
-							</div>
-					</div>
-
-
-
+		<div class="colorlib-blog">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center">
-						<ul class="pagination">
-							<li class="disabled"><a>&laquo;</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="radiomics.html">2</a></li>
-							<li><a href="dimensionalityReduction.html">3</a></li>
-							<li><a href="trainingAlgorithm.html">4</a></li>
-							<li><a href="trainOrDownload.html">5</a></li>
-							<li><a href="radiomics.html">&raquo;</a></li>
-						</ul>
+					<div class="col-md-12 animate-box">
+						<article>
+							<h2><a href="#">The Choices</a></h2>
+							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
+							<p>The algorithms you take to set up your machine are based on your personal preferences, but for the sake of information we will explain
+							how each one works. It's always better to choose if you have a proper understanding of why you're making your choices.</p>
+							<p> The use of the first algorithm that you will have to choose is to reduce the amount of data that your machine will have to process, because even if the
+							machine would become more accurate by getting more data, it would take way too long to process it all. So what this algorithm will do
+							is take the most important variables and get rid of the rest.<br>
+							You can choose the "tactic" it uses to do so:·<br><b>·Correlation</b>, that finds the variables that usually change together and groups them into one unique variable.<br>
+							 ·<b>Principal Component Analysis</b>, which chooses the data that affects the result the most.<br>
+							·<b>Linear Discriminant Analysis</b>, which finds a new dimension in which to fit different kinds of data as one.</p>
+							<p>The second algorithm that you choose will be the one that teaches the machine how to interpret the data that we give it. This way, when the machine is given
+							a new MRI that isn't solved, it will have learnt from the ones that were used to teach it, and it will know how to diagnose the patient based
+							on what it has seen in other MRIs.<br>
+							For this step, you can choose between 4 optons:<br>
+							 ·<b>Support Vector Machine</b>, which creates a threshold between groups of patients (ill/healthy, etc).<br>
+							 ·<b>Random Forest</b>, that randomly creates many decision trees which "vote" their outcome, picking the one with the most votes.<br>
+							 ·<b>Neural Network</b>, that immitates the structure of a human brain with several layers of "neurons".<br>
+							 ·<b>Generalized Linear Model</b>, that classifies patients based on a logistic regression.</p>
+								<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
+						</article>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<article>
+							<h2><a href="#">The MRIs</a></h2>
+							<!-- <p class="admin"><span>May 12, 2018</span></p> -->
+							<p>You may not have enough MRIs to properly train a machine. This can happen sometimes. We recommend that you train your own machine
+							only if you have over 80 MRIs from patients willing to take part in the project. If you happen to have fewer than that, we have made available an
+							option for you to download machines that other doctors have trained, so you can choose one of theirs if you lack enough MRIs.</p>
+
+							<!-- <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p> -->
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<ul class="pagination">
+					<li class="disabled"><a>&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="radiomics.html">2</a></li>
+					<li><a href="dimensionalityReduction.html">3</a></li>
+					<li><a href="trainingAlgorithm.html">4</a></li>
+					<li><a href="trainOrDownload.html">5</a></li>
+					<li><a href="radiomics.html">&raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+
+
 		<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
-						<h4>About EuCanShare</h4>
-						<p>EuCanShare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
+						<h4>About EuCanSHare</h4>
+						<p>EuCanSHare is a collaborative effort to create a platform to help cardiologists around the world diagnose their patients through the use of artificial intelligence and machine learning.</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -199,10 +202,8 @@
 							<ul class="colorlib-footer-links">
 								<li><a href="#"><i class="icon-check"></i> Home</a></li>
 								<li><a href="radiomics.html"><i class="icon-check"></i> Step-by-Step</a></li>
-								<li><a href="#"><i class="icon-check"></i>More information</a></li>
 								<li><a href="whatIsAI.html"><i class="icon-check"></i> What is AI?</a></li>
 								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
 							</ul>
 						</p>
 					</div>
@@ -213,7 +214,7 @@
 							<li>420 Hospital St, Hospital Land<br> Barcelona, Spain</li>
 							<li><a href="tel://645 82 11 79"><i class="icon-phone"></i> + 64 582 11 79</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> kamehamemarc@gmail.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> eucanshare.com</a></li>
+							<li><a href="#"><i class="icon-location4"></i> EuCanSHare.com</a></li>
 						</ul>
 					</div>
 				</div>
