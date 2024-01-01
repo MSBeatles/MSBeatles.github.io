@@ -23,6 +23,11 @@
             margin: 0;
         }
     </style>
+
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/2c2c9769f0.js" crossorigin="anonymous"></script>
+
+    <!-- OpenLayers map setting script-->
     <script src="OpenLayers.js"></script>
     <script>
         function init() {
@@ -54,37 +59,182 @@
 
 <!-- Body begins here -->
 <body onload="init();">
-    <header class="fixed-top">
+    <header style="height: 110px;" class="d-flex fixed-top flex-wrap justify-content-between py-3 mb-4 border-bottom navbar">
         <div class="container-fluid">   
-            <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom navbar">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <a href="index_silvia.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-5 ms-auto me-auto navbar-title">Dra. Sílvia Oller Canet - Psiquiatra d'adults</span>
                 </a>
-        
+
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#inici" class="nav-link active navbar-content me-2 ml-2" aria-current="page">Inici</a></li>
+                    <li class="nav-item"><a href="index_silvia.html" class="nav-link navbar-content me-2 ml-2" aria-current="page">Inici</a></li>
                     <li class="nav-item"><a href="#curriculum" class="nav-link navbar-content me-2 ml-2">Currículum</a></li>
                     <li class="nav-item"><a href="#mes_info" class="nav-link navbar-content me-2 ml-2">Més sobre trastorns mentals</a></li>
                     <li class="nav-item"><a href="#com_treballo" class="nav-link navbar-content me-2 ml-2">Com treballo?</a></li>
                 </ul>
-            </header>
         </div>
     </header>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <p>Carrer d'Aribau 143, Principal 1ª, Barcelona.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div id="basicMap"></div>
-            </div>
-        </div>
-    </div>
+    <main style="margin-top: 110px;">
+        <!-- Section with the start info -->
+        <section class="section-1">
 
+            <!-- Container with the intro -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12"></div>
+                        <h2 class="par">Si creus que tens un problema de salut mental, intentaré orientar-te i establir un pla de tractament per ajudar-te.</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Container with the address -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <p style="font-size: 1.75em;" class="par"><span><i class="fa-solid fa-location-dot par"></i></span> Carrer d'Aribau 143, Principal 1ª, Barcelona.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container with the map -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div id="basicMap"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container with the contact info -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <ul class="fa-ul">
+                            <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-phone"></i></span>: 93 xxx xx xx</li>
+                            <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>: ollercanet@gmail.com</li>
+                        </ul>
+                        <p style="font-size: 1.25em;" class="par">Horaris d'atenció al client: Dilluns-Dijous, de 16h a 20h.</p>
+                        <p style="font-size: 1.25em;" class="par">Visites presencials i en línia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section with the curriculum info -->
+        <section id="curriculum" class="section-2">
+            <!-- Container with the title -->
+            <div class="container-fluid tit">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <h1>Currículum</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container with the body -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <p class="text-cv">
+                            Actualment estic treballant a la sanitat pública a l'Hospital del Mar on visito pacients que tenen trastorns mentals i malalties físiques.
+                            També atenc pacients que tenen depressions que no milloren amb els tractaments habituals (anomenada depressió resistent).</p>
+                        <p class="text-cv">
+                            Anteriorment havia treballat a l'Hospital de Sant Pau on vaig realitzar el meu treball de tesi que estudiava l'efecte de dos fàrmacs per 
+                            intentar escurçar el temps de resposta dels antidepressius. Intentar mitigar el patiment dels pacients ha estat sempre un aspecte que m'ha motivat a investigar, estudiar 
+                            i millorar en la meva feina.</p>
+                        <p class="text-cv">
+                            També he estat varis anys treballant com a coordinadora de dos centres de salut mental, un al CAP Maragall i l'altre a Santa Coloma de 
+                            Gramenet on atenia a pacients de tot tipus, treballant de psiquiatra general.</p>
+                        <p class="text-cv">
+                            Vaig formar-me via MIR, fent la residència en psiquiatria a l'Hospital de Sant Pau on paral·lelament vaig realitzar la formació en 
+                            teràpia familiar sistèmica de la mateixa escola de teràpia sistèmica de l'Hospital de Sant Pau. Posteriorment he fet formació en teràpia cognitiva i <span style="font-style: italic">mindfulness</span>
+                            i compassió. També, darrerament ens hem adonat de la importància del trauma en el desenvolupament de trastorns mentals i m'he format en trauma.</p>
+                        <p class="text-cv">
+                            A nivell farmacològic estic sempre actualitzada, els tractaments antidepressius i psicofarmacològics m'interessen molt. A l'Hospital del Mar 
+                            fem tractaments amb ketamina i amb esketamina pel tractament de la depressió, tot i que encara estan en fase experimental.</p>
+                        <p class="text-cv">A continuació hi ha un resum d'algunes publicacions i pòsters presentats a congressos per si et resulta d'interès:</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container with the publications -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <ul>
+                            <li class="text-cv par">Publicació 1</li>
+                            <li class="text-cv par">Publicació 2</li>
+                            <li class="text-cv par">Publicació 3</li>
+                            <li class="text-cv par">Publicació 4</li>
+                            <li class="text-cv par">Publicació 5</li>
+                            <li class="text-cv par">Publicació 6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section with more info about mental illnesses -->
+        <section id="mes_info" class="section-1">
+
+            <!-- Container with the title -->
+            <div class="container-fluid tit">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <h1>Més informació sobre trastorns mentals</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <h2> Placeholder </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section with work methodologies-->
+        <section id="com_treballo" class="section-2">
+
+            <!-- Container with the title -->
+            <div class="container-fluid tit">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <h1>Com treballo</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <p class="text-cv">
+                            Inicialment realitzo amb la persona una o dues visites i llavors faig una orientació diagnòstica. A partir d'aquí, de manera conjunta fem un pla de tractament,
+                            ja sigui utilitzant psicofàrmacs o bé indicant la teràpia adient en funció del que li passi al pacient.
+                        </p>
+                        <p class="text-cv">
+                            Tinc formació i experiència tant en teràpies biològiques com en teràpia cognitiva-mindfulness i en teràpia familiar. Així que la meva visió del pacient sol 
+                            ser àmplia i intento fer un pla de tractament acurat a les necessitats de la persona.
+                        </p>
+                        <p class="text-cv">
+                            Si cal, indico la realització de tests psicològics que puguin aportar informació per al diagnòstic de manera més acurada, per exemple en el cas del TDAH o de 
+                            possibles trastorns de la personalitat.
+                        </p>
+                        <p class="text-cv">
+                            Col·laboro amb un equip de psicòlogues i psicòlegs experts en diversos temes, trauma, TDAH, trastorns obsessiu-compulsiu, depressió i ansietat, addiccions. Tots 
+                            amb àmplia experiència i expertesa en el seu camp.
+                        </p>
+                        <p class="text-cv">
+                            Si s'ha iniciat un tractament, llavors la persona realitzarà un seguiment amb mi de manera periòdica fins que es recuperi.
+                        </p>
+                        <p class="text-cv">
+                            Acostumo a estar disponible a través del mail i responc durant el mateix dia els dubtes i neguits que els pacients tinguin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
