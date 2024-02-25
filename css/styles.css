@@ -1,7 +1,13 @@
-header, html {
+html {
     margin: 0;
     padding: 0;
     background-color: rgb(110, 133, 183); /* Set the background color for the entire body */
+}
+
+header {
+    margin: 0,
+    padding: 0,
+    background-color: rgb(110, 133, 183);
 }
 
 .navbar-title {
