@@ -29,7 +29,10 @@
     <script src="https://kit.fontawesome.com/2c2c9769f0.js" crossorigin="anonymous"></script>
 
     <!-- OpenLayers map setting script-->
+    <script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v9.2.4/ol.css">
     <script src="OpenLayers.js"></script>
+    
     <script>
         function init() {
             map = new OpenLayers.Map("basicMap");
@@ -43,9 +46,9 @@
             var markers = new OpenLayers.Layer.Markers( "Markers" );
             map.addLayer(markers);
 
-            var size = new OpenLayers.Size(21,25);
+            var size = new OpenLayers.Size(32,32);
             var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
-            //var icon = new OpenLayers.Icon('https://w7.pngwing.com/pngs/517/350/png-transparent-paper-google-map-maker-computer-icons-world-map-location-icon-angle-pin-black.png', size, offset);
+            var icon = new OpenLayers.Icon('https://cdn4.iconfinder.com/data/icons/small-n-flat/24/map-marker-512.png', scale = 100, offset);
 
             markers.addMarker(new OpenLayers.Marker(position));
             //markers.addMarker(new OpenLayers.Marker(new OpenLayers.LonLat(lon, lat),icon));
@@ -67,18 +70,30 @@
                 </a>
 
                 <ul class="nav nav-pills">
-                    <li class="nav-item" style="font-size: 20px; padding: 10 px 20 px;"><a href="index_silvia.html" class="nav-link navbar-content me-2 ml-2" aria-current="page">Inici</a></li>
-                    <li class="nav-item" style="font-size: 20px; padding: 10 px 20 px;"><a href="#curriculum" class="nav-link navbar-content me-2 ml-2">Currículum</a></li>
-                    <li class="nav-item" style="font-size: 20px; padding: 10 px 20 px;"><a href="#mes_info" class="nav-link navbar-content me-2 ml-2">Més sobre trastorns mentals</a></li>
-                    <li class="nav-item" style="font-size: 20px; padding: 10 px 20 px;"><a href="#com_treballo" class="nav-link navbar-content me-2 ml-2">Com treballo?</a></li>
+                    <li class="nav-item">
+                        <a href="#inici" class="nav-link navbar-content active">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mes_info" class="nav-link navbar-content">Més sobre trastorns mentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#com_treballo" class="nav-link navbar-content">Com treballo?</a>
+                    </li>
                 </ul>
         </div>
     </header>
+
+
     <main style="margin-top: 110px;">
-        <section class="section-2">
+        <section id="inici" class="section-2">
             <div class="container-fluid">
-                <div class="col-12">
-                    <p>AQUÍ VINDRIA LA FOTO</p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
+                        <img src="img/silvia.jpg" alt="Sílvia Oller Canet" width="453" height="604">
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,27 +103,14 @@
         <section class="section-1">
 
             <!-- Container with the intro -->
-            <div class="container-fluid">
+            <div class="container-fluid" style="width: 80%">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-6"></div>
-                        <h2 class="par" style="text-align: justify;">Si creus que tens un problema de salut mental, intentaré orientar-te i establir un pla de tractament per ajudar-te.</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Container with the address -->
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                        <p style="font-size: 1.75em;" class="par"><span><i class="fa-solid fa-location-dot par"></i></span> Carrer d'Aribau 143, Principal 1ª, Barcelona.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Container with the map -->
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                        <div id="basicMap"></div>
+                        <h2 class="par" style="text-align: justify;">Em dic Sílvia Oller i soc doctora en Psiquiatria. Tinc 25 anys
+                            d’experiència en el tractament de la depressió, l’ansietat,
+                            trastorn bipolar, trastorns de personalitat, de la conducta
+                            alimentària i trastorns psicòtics. Si creus que necessites ajuda
+                            no ho dubtis i contacta amb mi</h2>
                     </div>
                 </div>
             </div>
@@ -118,14 +120,25 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-6">
                         <ul class="fa-ul">
-                            <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-phone"></i></span> 93 xxx xx xx</li>
+                            <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-location-dot par"></i></span> Carrer d'Aribau 143, Principal 1ª, Barcelona.</li>
+                            <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-phone"></i></span> 934 103 495 </li>
                             <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-clock"></i></span> Horaris d'atenció: Dilluns-Dijous, de 16h a 20h.</li>
                             <li style="font-size: 1.75em;" class="par"><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> ollercanet@gmail.com</li>
                         </ul>
-                        <p style="font-size: 1.25em;" class="par">Visites presencials i on-line.</p>
+                        <p style="font-size: 1.45em;" class="par">Visites presencials i on-line.</p>
                     </div>
                 </div>
             </div>
+            
+            <!-- Container with the map -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                        <div id="basicMap"></div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         
         <!-- Section with the curriculum info -->
@@ -261,6 +274,74 @@
             </div>
         </section>
     </main>
+
+    <!-- JavaScript to set the active link based on the URL and section in view -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.querySelectorAll('.navbar-content');
+            var sections = document.querySelectorAll('section');
+            var currentPath = window.location.hash;
+
+            function setActiveLink() {
+                navLinks.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+
+                sections.forEach(function (section) {
+                    var rect = section.getBoundingClientRect();
+                    if (rect.top <= 150 && rect.bottom >= 150) {
+                        var activeLink = document.querySelector('.navbar-content[href="#' + section.id + '"]');
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }
+
+            // Set active link based on current URL hash on page load
+            if (currentPath) {
+                var currentLink = document.querySelector('.navbar-content[href="' + currentPath + '"]');
+                if (currentLink) {
+                    currentLink.classList.add('active');
+                }
+            }
+
+            // Update active link on hash change
+            window.addEventListener('hashchange', function () {
+                var newPath = window.location.hash;
+                navLinks.forEach(function (link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === newPath) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Update active link on scroll
+            window.addEventListener('scroll', setActiveLink);
+
+            // Initial check to set active link on page load
+            setActiveLink();
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const yOffset = -100; // Offset to scroll 100 pixels above
+                const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({ top: yPosition, behavior: 'smooth' });
+
+                // Update active link class
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
