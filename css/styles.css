@@ -38,10 +38,15 @@ header {
     transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
     background-color: rgb(110, 133, 183); /* Change to your desired hover background color */
     color: white; /* Change to your desired hover text color */
+}
+
+.activate-bro {
+    background-color: rgb(110, 133, 183); /* Red background color */
+    color: #ffffff; /* White text color */
+    /* Add other styles as needed */
 }
 
 .section-1 {

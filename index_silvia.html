@@ -9,7 +9,7 @@
     <title>Dra Sílvia Oller Canet - Psiquiatra d'adults</title>
     
     <!-- Adding link to styles.css and js -->
-    <!--<link rel="stylesheet" href="css/styles.css" />-->
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
     <!-- Bootstrap CSS -->
@@ -40,7 +40,7 @@
             var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
             var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
             var position       = new OpenLayers.LonLat(2.15407, 41.3922).transform( fromProjection, toProjection);
-            var zoom           = 17 ; 
+            var zoom           = 15 ; 
             map.addLayer(mapnik);
 
             var markers = new OpenLayers.Layer.Markers( "Markers" );
@@ -71,7 +71,7 @@
 
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a href="#inici" class="nav-link navbar-content active">Inici</a>
+                        <a href="#inici" class="nav-link navbar-content">Inici</a>
                     </li>
                     <li class="nav-item">
                         <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
@@ -284,7 +284,7 @@
 
             function setActiveLink() {
                 navLinks.forEach(function (link) {
-                    link.classList.remove('active');
+                    link.classList.remove('activate-bro');
                 });
 
                 sections.forEach(function (section) {
@@ -292,7 +292,7 @@
                     if (rect.top <= 150 && rect.bottom >= 150) {
                         var activeLink = document.querySelector('.navbar-content[href="#' + section.id + '"]');
                         if (activeLink) {
-                            activeLink.classList.add('active');
+                            activeLink.classList.add('activate-bro');
                         }
                     }
                 });
@@ -302,7 +302,7 @@
             if (currentPath) {
                 var currentLink = document.querySelector('.navbar-content[href="' + currentPath + '"]');
                 if (currentLink) {
-                    currentLink.classList.add('active');
+                    currentLink.classList.add('activate-bro');
                 }
             }
 
@@ -310,9 +310,9 @@
             window.addEventListener('hashchange', function () {
                 var newPath = window.location.hash;
                 navLinks.forEach(function (link) {
-                    link.classList.remove('active');
+                    link.classList.remove('activate-bro');
                     if (link.getAttribute('href') === newPath) {
-                        link.classList.add('active');
+                        link.classList.add('activate-bro');
                     }
                 });
             });
