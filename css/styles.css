@@ -94,3 +94,24 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.white-background-link {
+    background-color: white;
+    padding: 5px 10px; /* Optional: Add padding to create space around the link */
+    display: inline-block; /* Ensures the background covers the entire link */
+    border-radius: 5px; /* Adjust the value to control the roundness of the corners */
+    color:rgb(110, 133, 183);
+    text-decoration: underline;
+}
+
+.blue-background {
+    background-color: rgb(0, 22, 70);
+    padding: 5px 10px; /* Optional: Add padding to create space around the link */
+    display: inline-block; /* Ensures the background covers the entire link */
+    border-radius: 5px; /* Adjust the value to control the roundness of the corners */
+    color:rgb(255, 255, 255);
+}
+
+.card {
+    margin-top: 10px;
+}
