@@ -74,7 +74,7 @@
                         <a href="#inici" class="nav-link navbar-content">Inici</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
+                        <a href="#curriculum" class="nav-link navbar-content" id="CurriculumLink">Currículum</a>
                     </li>
                     <li class="nav-item">
                         <a href="#mes_info" class="nav-link navbar-content" id="infoLink">Més sobre trastorns mentals</a>
@@ -445,16 +445,19 @@
         // Function to update text based on orientation
         function updateTextBasedOnOrientation() {
             const infoLink = document.getElementById('infoLink');
+            const cv = document.getElementById('CurriculumLink');
             const image = document.getElementById('silviaImage');
 
             if (window.matchMedia("(orientation: portrait)").matches) {
                 // If portrait mode
                 infoLink.textContent = "Més info";
+                cv.textContent = "CV";
                 image.width = 226.5; // Half of 453
                 image.height = 302;  // Half of 604
             } else {
                 // If landscape mode
                 infoLink.textContent = "Més sobre trastorns mentals";
+                cv.textContent = "Currículum"
                 image.width = 453;
                 image.height = 604;
             }
