@@ -150,4 +150,8 @@ body {
         margin: 0 2px;
         transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
     }
+
+    .start-par {
+        font-size: 0.5em;
+    }
 }
