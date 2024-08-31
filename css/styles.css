@@ -136,7 +136,7 @@ body {
     display: none; /* Hide all elements by default */
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
     .navbar-title {
         font-size: 8px;
     }
