@@ -67,6 +67,13 @@ header {
     padding-top: 10px;
 }
 
+
+.par-fa-li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.75em;
+}
+
 .tit {
     padding-bottom: 10px;
     padding-top: 15px;
@@ -157,5 +164,13 @@ body {
     .par {
         font-size: 1.25em;
         text-align: left;
+    }
+
+    .text-cv {
+        text-align: left;
+    }
+
+    .par-fa-li {
+        font-size: 1.25em;
     }
 }
