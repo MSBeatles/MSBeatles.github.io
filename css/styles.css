@@ -135,6 +135,6 @@ body {
 /* Add margin to the bottom of the navbar for smaller screens */
 @media only screen and (max-width: 576px) {
     header {
-        margin-bottom: 20px; /* Adjust this value as needed */
+        margin-bottom: 100px; /* Adjust this value as needed */
     }
 }
