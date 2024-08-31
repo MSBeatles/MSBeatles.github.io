@@ -133,7 +133,7 @@ body {
 }
 
 /* Adjust header for mobile devices */
-@media (max-width: 2000px) {
+@media (max-width: 1300px) {
     /* Adjust the header title size */
     .navbar-title-mine {
         font-size: 18px; /* Smaller font size for mobile */
