@@ -138,6 +138,10 @@ body {
 
 @media screen and (orientation: portrait) {
     .navbar-title {
-        font-size: 8px;
+        font-size: 18px;
+    }
+
+    .nav-item {
+        font-size: 10px;
     }
 }
