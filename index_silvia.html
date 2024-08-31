@@ -441,32 +441,6 @@
     </script>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const portraitElement = document.getElementById('portrait');
-        const landscapeElement = document.getElementById('landscape');
-
-        function updateVisibility() {
-            if (window.innerHeight > window.innerWidth) {
-                // Portrait mode
-                landscapeElement.style.display = 'none';
-                portraitElement.style.display = 'inline';
-            } else {
-                // Landscape mode
-                portraitElement.style.display = 'none';
-                landscapeElement.style.display = 'inline';
-            }
-        }
-
-        // Initial check
-        updateVisibility();
-
-        // Check on resize
-        window.addEventListener('resize', updateVisibility);
-    });
-    </script>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
