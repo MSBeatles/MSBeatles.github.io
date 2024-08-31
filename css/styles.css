@@ -156,5 +156,6 @@ body {
     }
     .par {
         font-size: 1.25em;
+        text-align: left;
     }
 }
