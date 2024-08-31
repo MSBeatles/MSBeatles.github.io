@@ -77,7 +77,7 @@
                         <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#mes_info" class="nav-link navbar-content">Més sobre trastorns mentals</a>
+                        <a href="#mes_info" class="nav-link navbar-content" id="infoLink">Més sobre trastorns mentals</a>
                     </li>
                     <li class="nav-item">
                         <a href="#com_treballo" class="nav-link navbar-content">Com treballo?</a>
@@ -438,6 +438,27 @@
                 this.classList.add('activate-bro');
             });
         });
+    </script>
+
+
+    <script>
+        // Function to update text based on orientation
+        function updateTextBasedOnOrientation() {
+            const infoLink = document.getElementById('infoLink');
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                // If portrait mode
+                infoLink.textContent = "Més info";
+            } else {
+                // If landscape mode
+                infoLink.textContent = "Més sobre trastorns mentals";
+            }
+        }
+
+        // Initial check
+        updateTextBasedOnOrientation();
+
+        // Add event listener for orientation changes
+        window.addEventListener('resize', updateTextBasedOnOrientation);
     </script>
 
 
