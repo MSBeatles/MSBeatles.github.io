@@ -135,3 +135,9 @@ body {
 .orientation-element {
     display: none; /* Hide all elements by default */
 }
+
+@media screen and (orientation: landscape) {
+    .navbar-title {
+        font-size: 18px;
+    }
+}
