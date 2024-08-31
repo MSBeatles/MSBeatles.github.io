@@ -132,25 +132,6 @@ body {
     color: white;
 }
 
-/* Ensure that the navbar items are hidden by default in portrait mode */
-@media (orientation: portrait) {
-    .navbar-nav {
-        display: none;
-    }
-    .navbar-toggler {
-        display: block;
-    }
-    .collapse.show {
-        display: block !important;
-    }
-}
-
-/* Ensure that the navbar items are displayed by default in landscape mode */
-@media (orientation: landscape) {
-    .navbar-nav {
-        display: flex;
-    }
-    .navbar-toggler {
-        display: none;
-    }
+.orientation-element {
+    display: none; /* Hide all elements by default */
 }

@@ -63,59 +63,42 @@
 
 <!-- Body begins here -->
 <body onload="init();">
-    <!-- <header style="height: 110px;" class="d-flex fixed-top flex-wrap justify-content-between py-3 mb-4 border-bottom navbar">
+    <header style="height: 110px;" class="d-flex fixed-top flex-wrap justify-content-between py-3 mb-4 border-bottom navbar">
         <div class="container-fluid">   
                 <a href="index_silvia.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-5 ms-auto me-auto navbar-title">Dra. Sílvia Oller Canet - Psiquiatra</span>
                 </a>
 
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills orientation-element" id="landscape">
                     <li class="nav-item">
-                        <a href="#inici" class="nav-link navbar-content">Inici_4</a>
+                        <a href="#inici" class="nav-link navbar-content">Inici_5</a>
                     </li>
                     <li class="nav-item">
                         <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#mes_info" class="nav-link navbar-content">Més sobre trastorns mentals</a>
+                        <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
                     </li>
                     <li class="nav-item">
                         <a href="#com_treballo" class="nav-link navbar-content">Com treballo?</a>
                     </li>
                 </ul>
-        </div>
-    </header> -->
 
-    <header style="height: 110px;" class="d-flex fixed-top flex-wrap justify-content-between py-3 mb-4 border-bottom navbar" id="portrait">
-        <div class="container-fluid">   
-                <a href="index_silvia.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <span class="fs-5 ms-auto me-auto navbar-title">Dra. Sílvia Oller Canet - Psiquiatra</span>
-                </a>
-
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                      <button data-mdb-button-init class="navbar-toggler ms-auto" type="button" data-mdb-collapse-init
-                        data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                      </button>
-                    </div>
-                  </nav>
-                  <div class="collapse" id="navbarToggleExternalContent3">
-                    <div class="bg-body-tertiary shadow-3 p-4">
-                      <button data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-                      <button data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-block m-0">Link
-                        3</button>
-                    </div>
-                  </div>
+                <ul class="nav nav-pills orientation-element" id="portrait">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#inici" class="nav-link navbar-content dropdown-item">Inici_5</a>
+                            <a href="#curriculum" class="nav-link navbar-content dropdown-item">Currículum</a>
+                            <a href="#curriculum" class="nav-link navbar-content dropdown-item">Currículum</a>
+                            <a href="#com_treballo" class="nav-link navbar-content drodpown-item">Com treballo?</a>
+                        </div>
+                    </li>
+                </ul>
         </div>
     </header>
-
-
-
 
     <main style="margin-top: 110px;">
         <section id="inici" class="section-2">
@@ -474,57 +457,27 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const header = document.querySelector('header');
-            const navbarTitle = document.querySelector('.navbar-title');
-            const navItems = document.querySelector('.navbar');
+        const portraitElement = document.getElementById('portrait');
+        const landscapeElement = document.getElementById('landscape');
 
-            function updateHeader() {
-                if (window.innerHeight > window.innerWidth) {
-                    // Portrait mode
-                    navbarTitle.style.fontSize = '0.5em'; // Adjust the font size as needed
-
-                    // Transform navbar into hamburger menu
-                    if (!document.querySelector('.navbar-toggler')) {
-                        const toggleButton = document.createElement('button');
-                        toggleButton.className = 'navbar-toggler';
-                        toggleButton.type = 'button';
-                        toggleButton.setAttribute('data-toggle', 'collapse');
-                        toggleButton.setAttribute('data-target', '#navbarContent');
-                        toggleButton.setAttribute('aria-controls', 'navbarContent');
-                        toggleButton.setAttribute('aria-expanded', 'false');
-                        toggleButton.setAttribute('aria-label', 'Toggle navigation');
-                        toggleButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
-                        
-                        header.appendChild(toggleButton);
-
-                        const navbarCollapse = document.createElement('div');
-                        navbarCollapse.className = 'collapse navbar-collapse';
-                        navbarCollapse.id = 'navbarContent';
-                        navbarCollapse.appendChild(navItems);
-                        header.appendChild(navbarCollapse);
-                    }
-                } else {
-                    // Landscape mode
-                    navbarTitle.style.fontSize = ''; // Reset to original size
-
-                    const existingToggleButton = document.querySelector('.navbar-toggler');
-                    if (existingToggleButton) {
-                        header.removeChild(existingToggleButton);
-                        const existingNavbarCollapse = document.querySelector('.collapse');
-                        if (existingNavbarCollapse) {
-                            header.removeChild(existingNavbarCollapse);
-                        }
-                        header.appendChild(navItems);
-                    }
-                }
+        function updateVisibility() {
+            if (window.innerHeight > window.innerWidth) {
+                // Portrait mode
+                portraitElement.style.display = 'block';
+                landscapeElement.style.display = 'none';
+            } else {
+                // Landscape mode
+                portraitElement.style.display = 'none';
+                landscapeElement.style.display = 'block';
             }
+        }
 
-            // Initial call to set up the header based on current orientation
-            updateHeader();
+        // Initial check
+        updateVisibility();
 
-            // Update header on resize
-            window.addEventListener('resize', updateHeader);
-        });
+        // Check on resize
+        window.addEventListener('resize', updateVisibility);
+    });
     </script>
 
 
