@@ -137,6 +137,7 @@ body {
     /* Adjust the header title size */
     .navbar-title {
         font-size: 18px; /* Smaller font size for mobile */
+        color: red;
     }
 
     /* Adjust the navigation links size */
