@@ -71,7 +71,7 @@
 
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a href="#inici" class="nav-link navbar-content">Inici _3</a>
+                        <a href="#inici" class="nav-link navbar-content">Inici_4</a>
                     </li>
                     <li class="nav-item">
                         <a href="#curriculum" class="nav-link navbar-content">Currículum</a>
@@ -440,6 +440,63 @@
             });
         });
     </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            const navbarTitle = document.querySelector('.navbar-title');
+            const navItems = document.querySelector('.navbar');
+
+            function updateHeader() {
+                if (window.innerHeight > window.innerWidth) {
+                    // Portrait mode
+                    navbarTitle.style.fontSize = '1.5em'; // Adjust the font size as needed
+
+                    // Transform navbar into hamburger menu
+                    if (!document.querySelector('.navbar-toggler')) {
+                        const toggleButton = document.createElement('button');
+                        toggleButton.className = 'navbar-toggler';
+                        toggleButton.type = 'button';
+                        toggleButton.setAttribute('data-toggle', 'collapse');
+                        toggleButton.setAttribute('data-target', '#navbarContent');
+                        toggleButton.setAttribute('aria-controls', 'navbarContent');
+                        toggleButton.setAttribute('aria-expanded', 'false');
+                        toggleButton.setAttribute('aria-label', 'Toggle navigation');
+                        toggleButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
+                        
+                        header.appendChild(toggleButton);
+
+                        const navbarCollapse = document.createElement('div');
+                        navbarCollapse.className = 'collapse navbar-collapse';
+                        navbarCollapse.id = 'navbarContent';
+                        navbarCollapse.appendChild(navItems);
+                        header.appendChild(navbarCollapse);
+                    }
+                } else {
+                    // Landscape mode
+                    navbarTitle.style.fontSize = ''; // Reset to original size
+
+                    const existingToggleButton = document.querySelector('.navbar-toggler');
+                    if (existingToggleButton) {
+                        header.removeChild(existingToggleButton);
+                        const existingNavbarCollapse = document.querySelector('.collapse');
+                        if (existingNavbarCollapse) {
+                            header.removeChild(existingNavbarCollapse);
+                        }
+                        header.appendChild(navItems);
+                    }
+                }
+            }
+
+            // Initial call to set up the header based on current orientation
+            updateHeader();
+
+            // Update header on resize
+            window.addEventListener('resize', updateHeader);
+        });
+    </script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
