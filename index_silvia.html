@@ -91,7 +91,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
-                        <img src="img/silvia.jpg" alt="Sílvia Oller Canet" width="453" height="604">
+                        <img src="img/silvia.jpg" alt="Sílvia Oller Canet" width="453" height="604" id="silviaImage">
                     </div>
                 </div>
             </div>
@@ -445,12 +445,18 @@
         // Function to update text based on orientation
         function updateTextBasedOnOrientation() {
             const infoLink = document.getElementById('infoLink');
+            const image = document.getElementById('silviaImage');
+
             if (window.matchMedia("(orientation: portrait)").matches) {
                 // If portrait mode
                 infoLink.textContent = "Més info";
+                image.width = 226.5; // Half of 453
+                image.height = 302;  // Half of 604
             } else {
                 // If landscape mode
                 infoLink.textContent = "Més sobre trastorns mentals";
+                image.width = 453;
+                image.height = 604;
             }
         }
 
