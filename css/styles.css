@@ -135,25 +135,25 @@ body {
 /* Adjust header for mobile devices */
 @media (max-width: 2000px) {
     /* Adjust the header title size */
-    .navbar-title {
+    .navbar-title-mine {
         font-size: 18px; /* Smaller font size for mobile */
-        color: red;
     }
 
     /* Adjust the navigation links size */
-    .navbar-content {
+    .navbar-content-mine {
         font-size: 14px; /* Smaller font size for mobile */
         padding: 10px 5px; /* Less padding for more space */
+
     }
 
     /* Adjust spacing and alignment in the header */
-    .navbar {
-        padding: 10px; /* Adjust header padding */
+    .navbar-mine {
+        padding: 140px; /* Adjust header padding */
         text-align: center; /* Center elements on mobile */
     }
 
     /* Stack elements vertically */
-    .container-fluid {
+    .container-fluid-mine {
         display: flex;
         flex-direction: column;
         align-items: center;
