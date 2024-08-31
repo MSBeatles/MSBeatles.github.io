@@ -132,9 +132,17 @@ body {
     color: white;
 }
 
-/* Add margin to the bottom of the navbar for smaller screens 
 @media only screen and (max-width: 576px) {
-    header {
-        margin-bottom: 100px; /* Adjust this value as needed 
+    .navbar-title {
+        font-size: 28px; /* Smaller font size for the title */
     }
-}*/
+
+    .nav-item {
+        font-size: 16px; /* Smaller font size for navbar items */
+        padding: 5px 10px; /* Reduced padding */
+    }
+
+    header {
+        margin-bottom: 20px; /* Additional bottom margin */
+    }
+}
