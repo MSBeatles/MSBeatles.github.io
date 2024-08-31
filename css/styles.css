@@ -133,7 +133,7 @@ body {
 }
 
 /* Adjust header for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 2000px) {
     /* Adjust the logo size */
     .site-logo img {
         width: 100px; /* Adjust size as needed */
