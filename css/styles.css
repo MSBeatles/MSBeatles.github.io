@@ -133,7 +133,7 @@ body {
 }
 
 /* Adjust header for mobile devices */
-@media only screen and (max-width: 576px) {
+@media only screen and (orientation: portrait) {
     /* Adjust the header title size */
     .navbar-title-mine {
         font-size: 18px; /* Smaller font size for mobile */
